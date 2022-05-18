@@ -1,0 +1,70 @@
+div {
+  color: red; }
+  div p {
+    border: 3px; }
+
+/*opreaciones*/
+div {
+  padding: 16px; }
+
+/*condicionales*/
+div {
+  color: red; }
+
+/*bucles*/
+h1 {
+  font-size: 24em; }
+
+h2 {
+  font-size: 12em; }
+
+h3 {
+  font-size: 8em; }
+
+h4 {
+  font-size: 6em; }
+
+h5 {
+  font-size: 4.8em; }
+
+h6 {
+  font-size: 4em; }
+
+/*each*/
+.color-red {
+  background-color: red; }
+
+.color-green {
+  background-color: green; }
+
+.color-yellow {
+  background-color: yellow; }
+
+.color-blue {
+  background-color: blue; }
+
+/*mapas*/
+.red-instagram {
+  color: #8a418a; }
+
+.red-whatsapp {
+  color: #2abe43; }
+
+.red-gmail {
+  color: red; }
+
+/*extend*/
+.boton, .boton-primario {
+  border: solid 2px;
+  padding: 10px 15px;
+  margin: 5px; }
+
+.boton-primario {
+  border-color: red;
+  background-color: red; }
+
+/*mixins*/
+div {
+  height: 3px;
+  width: 10px;
+  margin: 5px; }

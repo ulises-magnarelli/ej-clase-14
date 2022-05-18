@@ -4,3 +4,118 @@ div{
         border: 3px;
     }
 }
+
+
+/*opreaciones*/
+$spacing: 8px;
+
+div {
+    padding: $spacing*2 ;
+}
+
+
+
+
+
+
+
+
+
+/*condicionales*/
+$animal: perro;
+
+div {
+    @if $animal == gato {
+        color: black;
+    } @else if $animal != gato {
+        color: red;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/*bucles*/
+
+@for $i from 1 through 6 {
+
+    h#{$i} {
+        font-size: 24em / $i;
+    }
+}
+
+
+
+
+
+
+
+/*each*/
+
+$lista-colores:red, green, yellow, blue;
+
+@each $color in $lista-colores {
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+ 
+
+
+
+
+
+
+
+
+
+/*mapas*/
+$redes: (
+    instagram: rgb(138, 65, 138),
+    whatsapp: rgb(42, 190, 67),
+    gmail: rgb(255, 0, 0),
+    
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+
+
+/*extend*/
+.boton {
+    border: solid 2px;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.boton-primario {
+    @extend .boton;
+
+    border-color: red;
+    background-color: red;
+}
+
+
+/*mixins*/
+
+@mixin size ($alto, $ancho, $espaciado) {
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+}
+
+
+div {
+    @include size(3px,10px,5px)
+}
